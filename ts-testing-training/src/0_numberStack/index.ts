@@ -1,11 +1,24 @@
 // Create a class that creates a number stack object.
 // The stack should behave like a classic LIFO, where the last number you put in
-// is the first one you get out
-// A stack object should have the following methods on it:
-//   - push - put a number onto the stack
-//   - pop - remove the most recently pushed number and return it
-//   - peek - return the most recently pushed number (does not change the stack)
-//   - view -
+// is the first one you get out.
+// The skeleton for this class has been made for you.  Build out each function
+// using test driven development.
+// Remember the process -
+// - RED:
+//   - Write a single test for a small bit of functionality (Don't start writing
+//     a test for final, most complex part of the code.  Go slowly, you'll get
+//     there)
+//   - The test will fail (that's normal)
+// - GREEN:
+//   - Write the smallest amount of code possible JUST TO MAKE YOUR CURRENT
+//     TESTS PASS
+//   - Don't worry about having the full functionality yet.  Just make your
+//     current tests green.
+// - REFACTOR:
+//   - Refactor any of your existing code to make it cleaner, you will now know
+//     if your changes break any functionality
+// - REPEAT:
+//   - Start over again from RED, adding another small bit of functionality
 
 /**
  * A LIFO stack that can contain numbers
