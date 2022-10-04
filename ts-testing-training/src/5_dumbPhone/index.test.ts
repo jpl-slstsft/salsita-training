@@ -1,5 +1,7 @@
+import {getKeystrokes} from '.';
+
 describe('getKeystrokes', () => {
   it('should do stuff', () => {
-    // put stuff here
+    expect(getKeystrokes("HELLO WORLD")).toEqual("4433555p555666096667775553");
   });
 });
