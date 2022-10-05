@@ -17,9 +17,9 @@ export const fuzzySearch = (q:string, str:string[]): string[] => {
   const matches:string[] = [];
   str.forEach((s:string) => {
     let isMatch:boolean|undefined = undefined;
-    let pos:number = 0;
+    let pos:number = -1;
     [...q].every((qc:string) => {
-      if ((pos = s.indexOf(qc, pos)) === -1) { // JS walrus "operator"
+      if ((pos = s.indexOf(qc, pos+1)) === -1) { // JS walrus "operator"
         isMatch = false;
         return false; // break
       }

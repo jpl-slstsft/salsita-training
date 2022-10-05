@@ -31,4 +31,10 @@ describe('fuzzySearch', () => {
   it("should return nothing when called with 'ez' and the word 'orange'", () => {
     expect(fuzzySearch('ez', ['orange'])).toEqual([]);
   });
+  it("should return the words 'orange' when called with 'oe' and this word", () => {
+    expect(fuzzySearch('oe', ['orange'])).toEqual(['orange']);
+  });
+  it("should return nothing when called with 'aa' and the word 'a'", () => {
+    expect(fuzzySearch('aa', ['a'])).toEqual([]);
+  });
 });
