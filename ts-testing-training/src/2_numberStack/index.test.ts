@@ -65,4 +65,18 @@ describe('Stack', () => {
       });
     });
   });
+  describe('contents', () => {
+    let aNumberStack:NumberStack;
+    beforeEach(() => {
+      aNumberStack = new NumberStack();
+    });
+    it('should return an empty array when the stack has just been instantiated', () => {
+      expect(aNumberStack.contents).toEqual([]);
+    });
+    it('should return an empty array when 1 is pushed then popped', () => {
+      aNumberStack.push(1);
+      aNumberStack.pop();
+      expect(aNumberStack.contents).toEqual([]);
+    });
+  });
 });
