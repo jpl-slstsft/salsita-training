@@ -7,10 +7,10 @@ describe('isPrime', () => {
   it('should return false if passed 1', () => {
     expect(isPrime(1)).toEqual(false);
   });
-  it('should return false if passed 2', () => {
+  it('should return true if passed 2', () => {
     expect(isPrime(2)).toEqual(true);
   });
-  it('should return false if passed 3', () => {
+  it('should return true if passed 3', () => {
     expect(isPrime(3)).toEqual(true);
   });
   it('should return false if passed -1', () => {
